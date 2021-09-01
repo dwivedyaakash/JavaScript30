@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #222222;
+  color: #ffffff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("./background.jpg") bottom center;
+  background-size: cover;
+}
+
+.keys {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  min-height: 100vh;
+}
+
+.key {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+  background: rgb(0, 0, 0, 0.4);
+  border: 0.3rem solid #000;
+  border-radius: 0.5rem;
+  text-shadow: 0 0 0.5rem #000000;
+  margin: 1rem;
+  padding: 0.5rem 2rem;
+  width: 10rem;
+  transition: all 0.07s ease;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+kbd {
+  font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #ffc600;
+}
